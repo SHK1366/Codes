@@ -1,17 +1,19 @@
 source $VIMRUNTIME/vimrc_example.vim
 
-colorscheme codedark
+syntax enable
+set background=light
+colorscheme torte
 set hls
 set is
 set cb=unnamed
-set guifont=JetBrains_Mono_Medium:h10
+set guifont=Consolas:h14
 set ts=4
 set sw=4
 set si
 set guioptions-=r
 set guioptions -=T
 set guioptions -=m 
-cd C:\Users\SHK\Documents\vimp
+cd C:\Users\shahr\Documents\vimp
 
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++17 % -o %:r <CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
